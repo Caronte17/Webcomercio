@@ -1,0 +1,252 @@
+/* Estilos generales */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navegación */
+header {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: background 0.3s;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo img {
+    height: 50px;
+    width: auto;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+ul li a:hover {
+    color: #ff6600;
+}
+
+/* Secciones Hero */
+.hero {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.image-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.imagen {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.image-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.image-container:hover .image-footer {
+    opacity: 1;
+}
+
+/* Sección Trabajos */
+.portfolio {
+    padding: 60px 20px;
+    text-align: center;
+}
+.portfolio .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+.proyecto {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.proyecto:hover {
+    transform: translateY(-5px);
+}
+
+/* Contacto */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+input, textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button {
+    background: #ff6600;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #cc5500;
+}
+
+/* Footer */
+/* Estilos del Footer */
+footer {
+    background: #f4f4f4; /* Fondo más claro, igual que el de la página */
+    color: #333; /* Color del texto que combine mejor con el fondo */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alineación de los elementos al inicio */
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-links ul, .footer-socials ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+   
+    display: block; /* Cambiado a block para que los elementos sean verticales */
+}
+
+.footer-links li, .footer-socials li {
+    margin-bottom: 20px;  /* Espacio entre los elementos */
+    
+}
+
+.footer-links a, .footer-socials a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-socials a:hover {
+    color: #ff6600; /* Color al pasar el ratón */
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos de las redes sociales en columna */
+    gap: 10px;
+}
+
+.footer-socials .social-icon {
+    text-decoration: none;
+    color: #333; /* Color de los iconos de redes sociales */
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-socials .social-icon:hover {
+    color: #ff6600;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+
+.contact-button {
+    display: inline-block;
+    text-decoration: none;
+    background: #ff6600; /* Color de fondo del botón */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.contact-button:hover {
+    background: #cc5500; /* Color del botón al pasar el ratón */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Página de Trabajos */
+#trabajos .portfolio {
+    background: #fff;
+}
+
+#trabajos .proyecto {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#trabajos .proyecto:hover {
+    transform: translateY(-5px);
+}
+
+/* Página de Equipo */
+#equipo .team {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Página de Contacto */
+#contacto .contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
