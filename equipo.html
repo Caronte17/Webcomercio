@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo | Mi Proyecto</title>
+    <title>Nuestro Equipo</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Logo">
-                </a>
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
             </div>
             <ul>
                 <li><a href="trabajos.html">Trabajos</a></li>
@@ -22,13 +19,43 @@
             </ul>
         </nav>
     </header>
-
-    <!-- Aquí solo colocamos la sección de "Equipo" -->
-    <section class="team">
-        <h2>Nuestro Equipo</h2>
-        <p>Conoce a las personas detrás del proyecto.</p>
+    
+    <section id="equipo" class="team">
+        
+        <div class="equipo-grid">
+            <div class="equipo-miembro">
+                <img src="images/persona1.jpg" alt="Persona 1">
+                <div class="equipo-overlay">
+                    <p>Descripción Persona 1</p>
+                </div>
+            </div>
+            <div class="equipo-miembro">
+                <img src="images/persona2.jpg" alt="Persona 2">
+                <div class="equipo-overlay">
+                    <p>Descripción Persona 2</p>
+                </div>
+            </div>
+            <div class="equipo-miembro">
+                <img src="images/persona3.jpg" alt="Persona 3">
+                <div class="equipo-overlay">
+                    <p>Descripción Persona 3</p>
+                </div>
+            </div>
+            <div class="equipo-miembro">
+                <img src="images/persona4.jpg" alt="Persona 4">
+                <div class="equipo-overlay">
+                    <p>Descripción Persona 4</p>
+                </div>
+            </div>
+            <div class="equipo-miembro">
+                <img src="images/persona5.jpg" alt="Persona 5">
+                <div class="equipo-overlay">
+                    <p>Descripción Persona 5</p>
+                </div>
+            </div>
+        </div>
     </section>
-
+    
     <footer>
         <div class="footer-content">
 
@@ -41,8 +68,13 @@
             </div>
 
             <div class="footer-contact">
-                <p>Aqui iria la direccion fisica del negocio</p>
-                <a href="#contacto" class="contact-button">Contáctanos</a>
+                <div class="footer-contact">
+                    <p>Colonia San Antonio</p>
+                    <p>28047 Cercedilla, Madrid</p>
+                    <p>Teléfono: 91 852 32 87</p>
+                    <p>controlgestionaideas@gmail.com</p>
+                    <a href="#contacto" class="contact-button">Contáctanos</a>
+                </div>
             </div>
             <div class="footer-socials">
                 <a href="#" class="social-icon">Facebook</a>
@@ -55,6 +87,5 @@
         <div class="footer-bottom">
             <p>&copy; 2025 Mi Proyecto | Todos los derechos reservados</p>
         </div>
-    </footer>
 </body>
 </html>
