@@ -33,13 +33,15 @@ nav {
 .logo img {
     height: 65px;
     width: auto;
+    margin-left: -300px;
 }
 
 ul {
     list-style: none;
     display: flex;
     gap: 80px;
-    margin-right: 80px;
+    margin-right: -200px; /* Ajusta este valor para mover el ul más a la derecha */
+    
 }
 
 ul li a {
@@ -52,7 +54,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #607a13;
+    color: #b6d167;
 }
 .hidden-header {
     transform: translateY(-100%);
@@ -69,7 +71,7 @@ header {
     margin: 0;
     padding: 0;
     width: 100%;
-   
+    height: max-content;
 }
 
 .image-container {
@@ -243,20 +245,8 @@ header {
     z-index: 1; /* Asegura que el formulario esté encima del fondo borroso */
     text-align: center;
     color: white; /* Hace que el texto sea blanco para que resalte sobre el fondo */
-    padding: 50px;
 }
 
-.contacto-container h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: black;
-}
-
-.contacto-container p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: black;
-}
 
 /* Estilo para el formulario */
 form {
@@ -287,18 +277,18 @@ form button {
 
 form input,
 form textarea {
-    width: 100%;
+    width: 95%;
 }
 
 form button {
-    background-color: #d2ed80;
+    background-color: #9cb47c;
     color: #333;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 form button:hover {
-    background-color: #a7d765;
+    background-color: #d2ed80;
 }
 
 /* Footer */
@@ -494,23 +484,24 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 60px 20px;
-    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
 }
 
 .contacto-container {
     max-width: 600px;
     width: 100%;
-    background: white;
-    padding: 40px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    background: transparent; /* Elimina el fondo blanco */
+    padding: 0; /* Elimina el padding que causa espacio extra */
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 label {
