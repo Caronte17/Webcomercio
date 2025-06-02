@@ -29,5 +29,7 @@ Incluye una página principal, galería de trabajos, presentación del equipo y 
 - Imágenes y recursos utilizados solo con fines educativos.
 
 ---
+Notas sobre privacidad
+Este proyecto es para fines educativos. Los datos de ejemplo y usuarios son ficticios.
 
 ¡Gracias por visitar el proyecto!
